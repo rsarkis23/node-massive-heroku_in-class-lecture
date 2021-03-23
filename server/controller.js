@@ -3,7 +3,7 @@ module.exports = {
         const db = req.app.get('db')
 
         db.get_all_items()
-            .then(dbres => {
+            .then(dbRes => {
                 res.status(200).send(dbRes)
             })
             .catch(err => console.log(err))
