@@ -4,7 +4,7 @@ module.exports = {
 
         db.get_all_items()
             .then(dbres => {
-                res.status(200).send(dbres)
+                res.status(200).send(dbRes)
             })
             .catch(err => console.log(err))
     },
